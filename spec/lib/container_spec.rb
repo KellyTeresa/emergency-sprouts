@@ -10,12 +10,6 @@ describe Container do
     it 'has a type that is an Ingredient' do
       expect(container.type).to be_a(Ingredient)
     end
-    it 'has a weight of 50' do
-      expect(container.weight).to eq(50)
-    end
-    # it 'has a capacity of 20' do
-    #   expect(container.capacity).to eq(20)
-    # end
     it 'can carry a quantity of Cheesy Poofs' do
       expect(container.quantity).to eq(18143)
     end
@@ -35,9 +29,6 @@ describe Container do
     it 'has a weight of 200' do
       expect(container.weight).to eq(200)
     end
-    # it 'has a capacity of 300' do
-    #   expect(container.capacity).to eq(300)
-    # end
     it 'weighs 500 when full' do
       expect(container.weight_when_full?).to eq(500)
     end
