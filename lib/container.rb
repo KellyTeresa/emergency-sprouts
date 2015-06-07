@@ -1,5 +1,5 @@
 class Container
-  attr_reader :type, :weight, :capacity
+  attr_reader :type, :weight
   def initialize(type,weight,capacity)
     @type = type
     @weight = weight
@@ -7,7 +7,11 @@ class Container
   end
 
   def quantity
-     (capacity * type.number_per_pound).round
+     (@capacity / type.weight_in_pounds).floor
+  end
+
+  def weight_when_full?
+    ((quantity * type.weight_in_pounds) + weight).round
   end
 
 end

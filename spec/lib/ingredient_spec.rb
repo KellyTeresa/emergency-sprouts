@@ -9,9 +9,6 @@ describe Ingredient do
     it 'has a weight 20 grams' do
       expect(ingredient.weight).to eq(20)
     end
-    it 'has a weight 0.044092 pounds' do
-      expect(ingredient.weight_in_pounds).to eq(0.044092)
-    end
   end
 
   context 'Cheesy Poof' do
@@ -21,9 +18,6 @@ describe Ingredient do
     end
     it 'has a weight 0.5 grams' do
       expect(ingredient.weight).to eq(0.5)
-    end
-    it 'has a weight 0.001102 pounds' do
-      expect(ingredient.weight_in_pounds).to eq(0.001102)
     end
     it 'has 907 per pound' do
       expect(ingredient.number_per_pound).to eq(907)

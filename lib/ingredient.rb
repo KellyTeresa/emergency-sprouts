@@ -5,12 +5,12 @@ class Ingredient
     @weight = weight
   end
 
-  def weight_in_pounds
-    (weight * 0.00220462).round(6)
-  end
-
   def number_per_pound
     (1 / weight_in_pounds).round
+  end
+
+  def weight_in_pounds
+    (weight * 0.00220462)
   end
 
 end
