@@ -1,5 +1,5 @@
 class Container
-  attr_reader :type, :weight
+  attr_reader :type, :weight, :capacity
   def initialize(type,weight,capacity)
     @type = type
     @weight = weight
